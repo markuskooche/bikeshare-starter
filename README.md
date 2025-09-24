@@ -1,27 +1,25 @@
->**Note**: Please **fork** this Udacity repository so you have a **remote** repository in **your** GitHub account. Then you can clone the remote repository to your local machine. Later, as a part of the project, you will push your changes to the remote repository in your GitHub account.
+# Bikeshare Starter
 
-
-# Project Title
-
-Describe what your project is about and what it does
+Project for Udacity's [Introduction to Version Control](https://www.udacity.com/enrollment/cd0419) course.
 
 ## Information about how to use your project
 
-This could include:
+1. Run the following command to install the required dependencies:
 
-- Step-by-step instructions for installing or setting up your project.
-- Any software dependencies that need to be installed.
-- Instructions and examples for how to use your project, including any helpful code snippets.
-- Common issues and troubleshooting tips
+    ```shell
+    pip install -r requirements.txt
+    ```
 
-## Contribution guidelines
+2. Run the following command to start the application:
 
-If you welcome contributions, provide guidelines on how others can contribute to your project.
+    ```shell
+    python3 bikeshare.py
+    ```
 
 ## Credits
 
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Original repository can be found at: [udacity/post-your-work-project](https://github.com/udacity/post-your-work-project)
 
 ## Date created
 
-Include the date you created this project and README file.
+Date created: 24. September 2025
