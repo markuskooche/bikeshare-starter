@@ -82,7 +82,6 @@ def time_stats(df):
     Args:
         (DataFrame) df - Pandas DataFrame containing city data filtered by month and day
     """
-
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
@@ -110,7 +109,6 @@ def station_stats(df):
     Args:
         (DataFrame) df - Pandas DataFrame containing city data filtered by month and day
     """
-
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
@@ -137,7 +135,6 @@ def trip_duration_stats(df):
     Args:
         (DataFrame) df - Pandas DataFrame containing city data filtered by month and day
     """
-
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
@@ -149,12 +146,7 @@ def trip_duration_stats(df):
     mean_travel_time = df['Trip Duration'].mean()
     print(f'Mean Travel Time (in seconds):  {mean_travel_time}')
 
-
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
-
-
-    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
@@ -165,7 +157,6 @@ def user_stats(df):
     Args:
         (DataFrame) df - Pandas DataFrame containing city data filtered by month and day
     """
-
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
