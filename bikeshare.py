@@ -2,9 +2,11 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
-              'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+CITY_DATA = {
+    'chicago': 'chicago.csv',
+    'new york city': 'new_york_city.csv',
+    'washington': 'washington.csv',
+}
 
 def get_filters():
     """
@@ -15,7 +17,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print("Hello! Let's explore some US bikeshare data!")
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
 
@@ -60,7 +62,7 @@ def time_stats(df):
     # display the most common start hour
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
@@ -79,7 +81,7 @@ def station_stats(df):
     # display most frequent combination of start station and end station trip
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
@@ -95,7 +97,7 @@ def trip_duration_stats(df):
     # display mean travel time
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
@@ -114,7 +116,7 @@ def user_stats(df):
     # Display earliest, most recent, and most common year of birth
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
@@ -133,5 +135,5 @@ def main():
             break
 
 
-if __name__ == "__main__":
-	main()
+if __name__ == '__main__':
+    main()
