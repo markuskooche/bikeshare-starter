@@ -177,7 +177,15 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        offset = 0
+        raw_data = 'yes'
+        while raw_data == 'yes':
+            raw_data = input('\nWould you like to display raw data? Enter yes or no.\n').lower()
+            if raw_data == 'yes' and offset + 4 < len(df.index):
+                print(df[offset:offset+5])
+                offset += 5
+
+        restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
         if restart.lower() != 'yes':
             break
 
